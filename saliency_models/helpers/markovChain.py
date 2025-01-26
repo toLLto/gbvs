@@ -13,7 +13,7 @@ def solve(mat, tolerance):
         v = np.dot(mat,v)
         diff = np.linalg.norm(oldv - v, ord=2)
         s = sum(v)
-        if s>=0 and s< np.inf:
+        if s>0 and s< np.inf:
             continue
         else:
             v = oldoldv
